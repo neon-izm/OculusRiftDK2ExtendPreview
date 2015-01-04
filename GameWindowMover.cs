@@ -210,6 +210,7 @@ public class GameWindowMover : EditorWindow
 		{
 			if (Application.isPlaying)
 			{
+				CloseGameWindow();
 				MoveGameWindow();
 				toggle = true;
 			}
