@@ -7,7 +7,7 @@ OculusRift DK2を使ったコンテンツをUnityで作っているとき、「�
 
 1. OculusConfiguratiom UtilityでDK2をExtendModeにします。
 
-DK2をメイン画面の右側に配置します
+DK2をメイン画面の右側(複数モニタ環境なら一番右)に配置します
 
 2. Unity上でAssets→ImportPackage→CustumPackage→ "DK2ExtendPreview.unitypackage"を既存プロジェクトに追加。
  
