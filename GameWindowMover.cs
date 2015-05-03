@@ -61,7 +61,7 @@ public class GameWindowMover : EditorWindow
 	private bool useDesktopResolution = false;
 	//private bool useDesktopResolution = true;
 
-#if UNITY_STANDALONE_WIN
+#if UNITY_EDITOR
 
 	// ---------------------------------------------------------------------------------------------------
 	// add for win32 api to get display resolution
@@ -169,6 +169,7 @@ public class GameWindowMover : EditorWindow
 	
 	void OnGUI()
 	{
+#if UNITY_EDITOR
 		
 		EditorGUILayout.Space();
 		
@@ -185,7 +186,7 @@ public class GameWindowMover : EditorWindow
 		GUILayout.Label("Rift Game Mode is now activated. ");
 		
 		GUILayout.Label("Don't close this panel to keep script in effect.");
-		
+#endif		
 	}
 	
 	void Update()
